@@ -1,0 +1,24 @@
+html,
+body {
+    font-family: "PingFang SC", "Microsoft Yahei", Arial, Lucida, Verdana, SimSun, Helvetica, sans-serif, "Hiragino Sans GB";
+    font-size: 4.266666666666667vw;
+}
+
+$red: #f74c4c;
+
+@mixin positionAbsoluteCenter($left: 0, $right: 0) {
+    position: absolute;
+    margin: auto;
+    left: $left;
+    right: $right;
+}
+
+.box {
+    @include positionAbsoluteCenter;
+    top: 0;
+    bottom: 0;
+    font-size: 2rem;
+    color: $red;
+    text-align: center;
+    height: 4rem;
+}
